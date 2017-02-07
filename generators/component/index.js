@@ -20,11 +20,17 @@ module.exports = Generator.extend({
     this.fs.copy(
       this.templatePath('component.html'),
       this.destinationPath(`${path}/${name}.html`)
+      
+     
      );
     this.fs.copy(
       this.templatePath('component.ts'),
-      this.destinationPath(`${path}/${name}.ts')
+      this.destinationPath(`${path}/${name}.ts`)
+      
+      
      );
+     
+    
     this.fs.copy(
       this.templatePath('component.spec.ts'),
       this.destinationPath(`${path}/${name}.spec.ts`)
