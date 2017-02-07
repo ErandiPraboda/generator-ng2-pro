@@ -6,7 +6,7 @@ var yosay = require('yosay');
 module.exports = Generator.extend({
   
  writing() {
-    const name = this.options.name || 'myComponent';
+    const name = this.options.name || 'myService';
     const titleCase = string => string.charAt(0).toUpperCase() + string.slice(1);
     const lowerCase = string => string.charAt(0).toLowerCase() + string.slice(1);
     var path = process.cwd();
