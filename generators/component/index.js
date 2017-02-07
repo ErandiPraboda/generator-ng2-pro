@@ -10,12 +10,6 @@ module.exports = Generator.extend({
     const titleCase = string => string.charAt(0).toUpperCase() + string.slice(1);
     const lowerCase = string => string.charAt(0).toLowerCase() + string.slice(1);
     var path = process.cwd();
-    const props = {
-      componentName: lowerCase(name),
-      className: titleCase(name),
-      framework: 'angular2',
-      name
-    };
     
     this.fs.copy(
       this.templatePath('component.html'),
@@ -23,18 +17,20 @@ module.exports = Generator.extend({
       
      
      );
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('component.ts'),
-      this.destinationPath(`${path}/${name}.ts`)
-      
-      
-     );
+      this.destinationPath(`${path}/${name}.ts`),
+      { componentName : lowerCase(name),
+        className :titleCase(name),
+        name: name }
+    );
      
     
     this.fs.copy(
       this.templatePath('component.spec.ts'),
       this.destinationPath(`${path}/${name}.spec.ts`)
      );
+
    },
 
   

@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: '<%- componentName %>',
-  template: require('./<%- name %>.html')
+  selector: '<%= componentName %>',
+  template: require('./<%= name %>.html')
 })
-export class <%- className %> {
+export class <%= className %> {
   public text: string;
 
   constructor() {
