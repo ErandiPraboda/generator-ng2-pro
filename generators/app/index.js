@@ -19,8 +19,7 @@ module.exports = Generator.extend({
        name: 'Angular',
        value: 'includeAngular',
        checked: true
-      }, 
-      {
+      }, {
        name: 'JQuery',
        value: 'includeJQuery',
        checked: true
@@ -50,18 +49,20 @@ module.exports = Generator.extend({
       type    : 'input',
       name    : 'name',
       message : 'Your project name',
-      default : this.appname 
-     }
-  ];
-
+      default : this.appname // Default to current folder name
+       
+    }
+    
+    ];
    return this.prompt(prompts).then(function (props) {
     this.props = props;
     this.name = props.name;
     
     }.bind(this));
- },
-   writing: function () 
-   {
+    },
+   writing: function () {
+    
+    
     this.fs.copy(
       this.templatePath('app/app.component.css'),
       this.destinationPath('app/app.component.css')
@@ -95,10 +96,6 @@ module.exports = Generator.extend({
       this.destinationPath('app/shared/shared.component.ts')
     );
     this.fs.copy(
-      this.templatePath('main.ts'),
-      this.destinationPath('app/main.ts')
-    );
-    this.fs.copy(
       this.templatePath('index.html'),
       this.destinationPath('index.html')
     ); 
@@ -106,12 +103,8 @@ module.exports = Generator.extend({
       this.templatePath('gulpfile.js'),
       this.destinationPath('gulpfile.js')
     );
-    
-    
    },
-
-  bower: function()
-  {
+  bower: function(){
             var bowerJson = {
                 name: this.name, 
                 license: 'MIT',
@@ -145,48 +138,40 @@ module.exports = Generator.extend({
         this.templatePath('bowerrc'),
         this.destinationPath('.bowerrc')
       );
-  },
-
+      },
  package :function()
  {
        var packageJson = {
-                name: this.name,
-                description: 'Angular 2',
-                repository : {
-                  type : "git",
-                  url : "https://github.com/Erandi1234/generator-ng2-pro.git"
-                }, 
-                keywords : [],
-                scripts : {},
+                name: this.name, 
                 license: 'MIT',
-                dependencies : {},
-                devDependencies :{}
+                dependencies: {},
+                devDependencies :{} 
             };
        
-            packageJson.devDependencies['browser-sync'] = '2.2.1';
-            packageJson.devDependencies['gulp'] = '3.8.0';
-            packageJson.devDependencies['gulp-concat'] ='2.4.1';
-            packageJson.devDependencies['gulp-eslint'] = '3.0.1';
+            packageJson.devDependencies['browser-sync'] = '^2.2.1';
+            packageJson.devDependencies['gulp'] = '~3.8.0';
+            packageJson.devDependencies['gulp-concat'] ='^2.4.1';
+            packageJson.devDependencies['gulp-eslint'] = '^3.0.1';
             packageJson.devDependencies['gulp-foreach'] = '0.0.1';
-            packageJson.devDependencies['gulp-load-plugins'] = '0.8.1';
-            packageJson.devDependencies['gulp-rename'] = '1.2.0';
-            packageJson.devDependencies['gulp-sourcemaps'] = '1.2.2';
-            packageJson.devDependencies['gulp-uglify'] = '1.0.1';
-            packageJson.devDependencies['gulp-util'] = '3.0.1';
-            packageJson.devDependencies['jasmine-core'] = '2.4.0';
-            packageJson.devDependencies['jasmine-node'] = '2.0.0';
-            packageJson.devDependencies['jasmine-reporters'] = '2.2.0';
-            packageJson.devDependencies['karma'] = '1.1.2';
-            packageJson.devDependencies['karma-browserstack-launcher'] = '1.0.1';
-            packageJson.devDependencies['karma-chrome-launcher'] = '1.0.1';
-            packageJson.devDependencies['karma-firefox-launcher'] = '1.0.0';
-            packageJson.devDependencies['karma-jasmine'] = '1.0.2';
-            packageJson.devDependencies['karma-junit-reporter'] = '1.1.0';
-            packageJson.devDependencies['karma-ng-scenario'] = '1.0.0';
-            packageJson.devDependencies['karma-sauce-launcher'] = '1.0.0';
-            packageJson.devDependencies['karma-script-launcher'] = '1.0.0';
+            packageJson.devDependencies['gulp-load-plugins'] = '^0.8.1';
+            packageJson.devDependencies['gulp-rename'] = '^1.2.0';
+            packageJson.devDependencies['gulp-sourcemaps'] = '^1.2.2';
+            packageJson.devDependencies['gulp-uglify'] = '^1.0.1';
+            packageJson.devDependencies['gulp-util'] = '^3.0.1';
+            packageJson.devDependencies['jasmine-core'] = '^2.4.0';
+            packageJson.devDependencies['jasmine-node'] = '^2.0.0';
+            packageJson.devDependencies['jasmine-reporters'] = '^2.2.0';
+            packageJson.devDependencies['karma'] = '^1.1.2';
+            packageJson.devDependencies['karma-browserstack-launcher'] = '^1.0.1';
+            packageJson.devDependencies['karma-chrome-launcher'] = '^1.0.1';
+            packageJson.devDependencies['karma-firefox-launcher'] = '^1.0.0';
+            packageJson.devDependencies['karma-jasmine'] = '^1.0.2';
+            packageJson.devDependencies['karma-junit-reporter'] = '^1.1.0';
+            packageJson.devDependencies['karma-ng-scenario'] = '^1.0.0';
+            packageJson.devDependencies['karma-sauce-launcher'] = '^1.0.0';
+            packageJson.devDependencies['karma-script-launcher'] = '^1.0.0';
             
-            this.fs.writeJSON('package.json', packageJson);
+       this.fs.writeJSON('package.json', packageJson);
  },
  application :function()
  {
@@ -199,11 +184,12 @@ module.exports = Generator.extend({
   var componentJson = {};
   this.fs.writeJSON('app/'+this.name+'/'+this.name+'.ts',componentJson);
  },
- install: function () {
+ 
+
+
+  install: function () {
     this.installDependencies({
 
     });
-
   }
- 
 });
