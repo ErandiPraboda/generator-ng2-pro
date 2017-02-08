@@ -111,6 +111,12 @@ module.exports = Generator.extend({
       this.templatePath('.eslintrc.json'),
       this.destinationPath('.eslintrc.json')
     );
+    this.fs.copyTpl(
+      this.templatePath('package.json'),
+      this.destinationPath('package.json'),
+      { 
+        name: this.name }
+    );
    },
   bower: function()
   {
@@ -148,40 +154,7 @@ module.exports = Generator.extend({
         this.destinationPath('.bowerrc')
       );
   },
- package :function()
- {
-       var packageJson = {
-                name: this.name, 
-                license: 'MIT',
-                dependencies: {},
-                devDependencies :{} 
-            };
-       
-            packageJson.devDependencies['browser-sync'] = '^2.2.1';
-            packageJson.devDependencies['gulp'] = '~3.8.0';
-            packageJson.devDependencies['gulp-concat'] ='^2.4.1';
-            packageJson.devDependencies['gulp-eslint'] = '^3.0.1';
-            packageJson.devDependencies['gulp-foreach'] = '0.0.1';
-            packageJson.devDependencies['gulp-load-plugins'] = '^0.8.1';
-            packageJson.devDependencies['gulp-rename'] = '^1.2.0';
-            packageJson.devDependencies['gulp-sourcemaps'] = '^1.2.2';
-            packageJson.devDependencies['gulp-uglify'] = '^1.0.1';
-            packageJson.devDependencies['gulp-util'] = '^3.0.1';
-            packageJson.devDependencies['jasmine-core'] = '^2.4.0';
-            packageJson.devDependencies['jasmine-node'] = '^2.0.0';
-            packageJson.devDependencies['jasmine-reporters'] = '^2.2.0';
-            packageJson.devDependencies['karma'] = '^1.1.2';
-            packageJson.devDependencies['karma-browserstack-launcher'] = '^1.0.1';
-            packageJson.devDependencies['karma-chrome-launcher'] = '^1.0.1';
-            packageJson.devDependencies['karma-firefox-launcher'] = '^1.0.0';
-            packageJson.devDependencies['karma-jasmine'] = '^1.0.2';
-            packageJson.devDependencies['karma-junit-reporter'] = '^1.1.0';
-            packageJson.devDependencies['karma-ng-scenario'] = '^1.0.0';
-            packageJson.devDependencies['karma-sauce-launcher'] = '^1.0.0';
-            packageJson.devDependencies['karma-script-launcher'] = '^1.0.0';
-            
-       this.fs.writeJSON('package.json', packageJson);
- },
+ 
  application :function()
  {
   var componentJson = {};
