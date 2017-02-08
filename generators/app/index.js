@@ -103,8 +103,17 @@ module.exports = Generator.extend({
       this.templatePath('gulpfile.js'),
       this.destinationPath('gulpfile.js')
     );
+    this.fs.copy(
+      this.templatePath('tslint.json'),
+      this.destinationPath('tslint.json')
+    );
+    this.fs.copy(
+      this.templatePath('.eslintrc.json'),
+      this.destinationPath('.eslintrc.json')
+    );
    },
-  bower: function(){
+  bower: function()
+  {
             var bowerJson = {
                 name: this.name, 
                 license: 'MIT',
@@ -138,7 +147,7 @@ module.exports = Generator.extend({
         this.templatePath('bowerrc'),
         this.destinationPath('.bowerrc')
       );
-      },
+  },
  package :function()
  {
        var packageJson = {
