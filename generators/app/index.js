@@ -60,67 +60,87 @@ module.exports = Generator.extend({
     
     }.bind(this));
     },
-   writing: function () {
-    
-    
-    this.fs.copy(
-      this.templatePath('app/app.component.css'),
-      this.destinationPath('app/app.component.css')
-    );
-    this.fs.copy(
-      this.templatePath('app/app.component.html'),
-      this.destinationPath('app/app.component.html')
-    );
-    this.fs.copy(
-      this.templatePath('app/app.component.ts'),
-      this.destinationPath('app/app.component.ts')
-    );
-    this.fs.copy(
-      this.templatePath('app/app.module.ts'),
-      this.destinationPath('app/app.module.ts')
-    );
-    this.fs.copy(
-      this.templatePath('app/app.routes.ts'),
-      this.destinationPath('app/app.routes.ts')
-    );
-     this.fs.copy(
-      this.templatePath('app/shared/shared.ts'),
-      this.destinationPath('app/shared/shared.ts')
-    );
-     this.fs.copy(
-      this.templatePath('app/shared/shared.service.ts'),
-      this.destinationPath('app/shared/shared.service.ts')
-    );
-    this.fs.copy(
-      this.templatePath('app/shared/shared.component.ts'),
-      this.destinationPath('app/shared/shared.component.ts')
-    );
-    this.fs.copy(
-      this.templatePath('index.html'),
-      this.destinationPath('index.html')
-    ); 
-    this.fs.copy(
-      this.templatePath('gulpfile.js'),
-      this.destinationPath('gulpfile.js')
-    );
-    this.fs.copy(
-      this.templatePath('tslint.json'),
-      this.destinationPath('tslint.json')
-    );
-    this.fs.copy(
-      this.templatePath('.eslintrc.json'),
-      this.destinationPath('.eslintrc.json')
-    );
-    this.fs.copyTpl(
-      this.templatePath('package.json'),
-      this.destinationPath('package.json'),
-      { 
-        name: this.name }
-    );
+
+   writing: function () 
+   {
+        this.fs.copyTpl(
+            this.templatePath('eslintignore'),
+            this.destinationPath('.eslintignore')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('eslintrc.json'),
+            this.destinationPath('.eslintrc.json')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('gitignore'),
+            this.destinationPath('.gitignore')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('package.json'),
+            this.destinationPath('package.json'), {
+                name: this.name,
+                
+            }
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('README.md'),
+            this.destinationPath('README.md'), {
+                appname: this.name
+            }
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('travis.yml'),
+            this.destinationPath('.travis.yml')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('tsconfig.json'),
+            this.destinationPath('tsconfig.json')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('karma.conf.js'),
+            this.destinationPath('karma.conf.js')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('karma-shim.js'),
+            this.destinationPath('karma-shim.js')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('protractor.conf.js'),
+            this.destinationPath('protractor.conf.js')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('tslint.json'),
+            this.destinationPath('tslint.json')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('typedoc.json'),
+            this.destinationPath('typedoc.json')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('typings.json'),
+            this.destinationPath('typings.json')
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('webpack.config.js'),
+            this.destinationPath('webpack.config.js')
+        );
    },
   bower: function()
   {
-            var bowerJson = {
+  var bowerJson = {
                 name: this.name, 
                 license: 'MIT',
                 dependencies: {}  
@@ -130,23 +150,19 @@ module.exports = Generator.extend({
             bowerJson.dependencies['angular-ui-router'] = '~0.2.15';
             bowerJson.dependencies['bootstrap-css-only'] = '~3.3.5';
         
-        if (this.includeBootstrap) 
-        {
+  if (this.includeBootstrap) {
         var bs = 'bootstrap' + (this.includeSass ? '-sass' : '');
         bowerJson.dependencies['bs'] = '~3.3.1';
-        }
-        if (this.includeModernizr) 
-        {
+  }
+  if (this.includeModernizr) {
         bowerJson.dependencies['modernizr'] = '~2.8.1';
-        }
-        if (this.includeAngular) 
-        {
+  }
+  if (this.includeAngular) {
         bower.dependencies['angular'] = '~1.3.15';
-        }  
-        if (this.includeJQuery) 
-        {
+  }  
+  if (this.includeJQuery) {
         bower.dependencies['jquery'] = '~2.1.1';
-        }
+  }
        this.fs.writeJSON('bower.json', bowerJson);
 
         this.fs.copy(
