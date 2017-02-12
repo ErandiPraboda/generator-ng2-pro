@@ -43,7 +43,7 @@
       "mocha": true
     }
   },
-  "repository": "/generator-myapp",
+  
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
