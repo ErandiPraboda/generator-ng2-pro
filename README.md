@@ -13,7 +13,7 @@ npm install -g generator-ng2-pro
 Then generate your new project:
 
 ```bash
-yo myapp
+yo ng2-pro
 ```
 
 ## Getting To Know Yeoman
