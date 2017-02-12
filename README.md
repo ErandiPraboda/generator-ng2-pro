@@ -1,9 +1,9 @@
-# generator-ng2-pro [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> 
+# generator-ng2-pro 
+[![Build Status](https://travis-ci.org/Erandi1234/generator-ng2-pro.svg?branch=master)](https://travis-ci.org/Erandi1234/generator-ng2-pro)
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-myapp using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-ng2-pro using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
@@ -28,11 +28,4 @@ yo ng2-pro
 MIT © [Erandi](erandipraboda@gmail.com)
 
 
-[npm-image]: https://badge.fury.io/js/generator-myapp.svg
-[npm-url]: https://npmjs.org/package/generator-myapp
-[travis-image]: https://travis-ci.org//generator-myapp.svg?branch=master
-[travis-url]: https://travis-ci.org//generator-myapp
-[daviddm-image]: https://david-dm.org//generator-myapp.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org//generator-myapp
-[coveralls-image]: https://coveralls.io/repos//generator-myapp/badge.svg
-[coveralls-url]: https://coveralls.io/r//generator-myapp
+
