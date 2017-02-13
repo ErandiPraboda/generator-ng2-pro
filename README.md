@@ -1,6 +1,6 @@
 # generator-ng2-pro 
 [![Build Status](https://travis-ci.org/Erandi1234/generator-ng2-pro.svg?branch=master)](https://travis-ci.org/Erandi1234/generator-ng2-pro)
-[![npm version](https://badge.fury.io/js/%40angular%2Fcore.svg)](https://badge.fury.io/js/%40angular%2Fcore)
+[![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT) [![Code Climate](https://codeclimate.com/github/Erandi1234/generator-ng2-pro/badges/gpa.svg)](https://codeclimate.com/github/Erandi1234/generator-ng2-pro) [![npm](https://img.shields.io/npm/dm/localeval.svg)]() [![npm](https://img.shields.io/npm/v/npm.svg)]()
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-ng2-pro using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
