@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
-var TypedocWebpackPlugin = require('typedoc-webpack-plugin');
+//var TypedocWebpackPlugin = require('typedoc-webpack-plugin');
 module.exports = {
   entry: {
     'polyfills': './src/polyfills.ts',
@@ -61,7 +61,7 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: ['app', 'vendor', 'polyfills']
     }),
-    new TypedocWebpackPlugin({}),
+    //new TypedocWebpackPlugin({}),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     })
