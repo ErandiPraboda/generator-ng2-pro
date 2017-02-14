@@ -113,6 +113,10 @@ module.exports = Generator.extend({
             this.templatePath('webpack.config.js'),
             this.destinationPath('webpack.config.js')
         );
+        this.fs.copyTpl(
+            this.templatePath('karma.conf.js'),
+            this.destinationPath('karma.conf.js')
+        );
 },
  
 
