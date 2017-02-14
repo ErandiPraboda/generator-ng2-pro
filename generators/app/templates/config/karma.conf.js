@@ -3,24 +3,19 @@ var webpackConfig = require('./config/webpack.test.js');
 module.exports = function(config) {
   config.set({
 
-    
+    // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine','karma-typescript'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
     files: [
     {
-      pattern: './config/karma-test-shim.js', watched: false},
-
-     { pattern: "./src/**/*.ts" }
-
-     
-
+        pattern: './config/karma-test-shim.js', watched: false}
     ],
 
     webpack: webpackConfig,
@@ -30,33 +25,20 @@ module.exports = function(config) {
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: 
-    {
-      
-      './config/karma-test-shim.js': ['webpack', 'sourcemap'],
-      './src/**/app.component.ts': ['karma-typescript'],
-   
+    preprocessors: {
+      './config/karma-test-shim.js': ['webpack', 'sourcemap']
     },
-    
-    coverageReporter: {
-            dir: 'report/',
-            reporters: [
-                {type: 'html', subdir: 'coverage'}
-            ]
-        },
 
-    stats: 'errors-only',
+      stats: 'errors-only',
     
 
     webpackServer: {
       noInfo: true
     },
-
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-
-    reporters: ['progress','karma-typescript'],
+    reporters: ['progress'],
 
 
     // web server port

@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import '../../public/css/styles.css';
-export class Hero {
-  id: number;
-  name: string;
-}
+
 
 @Component({
   

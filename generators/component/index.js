@@ -3,7 +3,7 @@ var path = require('path');
 var Generator = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
-
+var mkdirp = require('mkdirp');
 module.exports = Generator.extend({
     writing: function() 
      {
@@ -14,13 +14,13 @@ module.exports = Generator.extend({
     
     this.fs.copy(
       this.templatePath('_component.html'),
-      this.destinationPath(`${path}/${name}.html`)
+      this.destinationPath(`${path}/${name}/${name}.html`)
       
      
      );
     this.fs.copyTpl(
       this.templatePath('_component.ts'),
-      this.destinationPath(`${path}/${name}.ts`),
+      this.destinationPath(`${path}/${name}/${name}.ts`),
       { componentName : lowerCase(name),
         className :titleCase(name),
         name: name }
@@ -29,8 +29,10 @@ module.exports = Generator.extend({
     
     this.fs.copy(
       this.templatePath('_component.spec.ts'),
-      this.destinationPath(`${path}/${name}.spec.ts`)
+      this.destinationPath(`${path}/${name}/${name}.spec.ts`)
      );
+
+    mkdirp.sync(`${path}/${name}/shared`);
  
      }
 
