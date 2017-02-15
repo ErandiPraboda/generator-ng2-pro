@@ -21,6 +21,38 @@ steps
 * Run yarn start from a terminal
 * Navigate to http://localhost:8080/ The app will automatically reload if you change any of the source files 
 
+## Scaffold Complete Directory Layout
+├── /config/                   
+    └── /helpers.js
+    └── /karma-test-shim.js
+    └── /webpack.common.js
+    └── /webpack.dev.js
+    └── /webpack.test.js
+├── /public/                    
+    ├── /css
+    ├── /images
+├── /src/                       
+    ├── /app
+         └── /app.component.html
+         └── /app.component.scss
+         └── /app.component.spec.ts
+         └── /app.component.ts
+         └── /app.module.ts
+    ├── /index.html
+    └── main.ts
+    └── polyfills.ts
+    └── vendor.ts
+├── /node_modules/             
+├── .gitignore                                    
+├── .travis.yml                                     
+├── karma.conf.js              
+├── Readme.md                
+├── package.json                
+├── typedoc.json                  
+├── tsconfig.json              
+├── tslint.json               
+└── typings.json                
+└── webpack.conf.js 
 
 ## Usage
 
