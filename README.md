@@ -45,13 +45,16 @@ Service                yo ng2-pro:service --name [service-name]
 Interface              yo ng2-pro:interface --name [interface-name]
 ```
 ## Testing
+```bash
 yarn test
+```
 
 ## Tslint
 Uses the sass-lint npm module to check ts files. you can use this linter by runing following command
 ```bash
 yarn tslint
 ```
+
 ## sass-lint
 Uses the sass-lint npm module to check scss and sass files. you can use this linter by runing following command
 ```bash
