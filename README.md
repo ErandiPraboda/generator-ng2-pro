@@ -21,6 +21,9 @@ steps
 * Run yarn start from a terminal
 * Navigate to http://localhost:8080/ The app will automatically reload if you change any of the source files 
 
+## Features
+![img](http://imgur.com/a/4J78V)                 
+                 
 ## Scaffold Complete Directory Layout
 ```bash
 ├── /config/                   
