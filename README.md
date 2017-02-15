@@ -17,20 +17,21 @@ Then generate your new project:
 yo ng2-pro
 ```
 steps
-Run yarn start from a terminal
-Navigate to http://localhost:8080/ The app will automatically reload if you change any of the source files 
+
+* Run yarn start from a terminal
+* Navigate to http://localhost:8080/ The app will automatically reload if you change any of the source files 
 
 
 ## Usage
 
 That'll generate a project with all the common tools setup. This includes:
 Filled package.json file 
-[Webpack](https://webpack.js.org/) task runner
-[Jasmine](https://jasmine.github.io/) unit testing
-[Karma](https://karma-runner.github.io/1.0/index.html) test runner
-[TSLint](https://palantir.github.io/tslint/) and [SASS Lint](https://www.npmjs.com/package/sass-lint) linting and code style checking
-[Istanbul](https://webpack.js.org/) code coverage
-[Travis CI](https://travis-ci.org/) continuous integration
+* [Webpack](https://webpack.js.org/) task runner
+* [Jasmine](https://jasmine.github.io/) unit testing
+* [Karma](https://karma-runner.github.io/1.0/index.html) test runner
+* [TSLint](https://palantir.github.io/tslint/) and [SASS Lint](https://www.npmjs.com/package/sass-lint) linting and code style checking
+* [Istanbul](https://webpack.js.org/) code coverage
+* [Travis CI](https://travis-ci.org/) continuous integration
 
 Generating Component, Directives, Pipes and Services
 You can use yo ng2-pro command to generate Angular Componenet, Directives, Pipes and Services
