@@ -34,6 +34,7 @@ Filled package.json file
 * [Travis CI](https://travis-ci.org/) continuous integration
 
 Generating Component, Directives, Pipes and Services
+```bash
 You can use yo ng2-pro command to generate Angular Componenet, Directives, Pipes and Services
 
 Scaffold               Usage
@@ -42,7 +43,7 @@ Directive              yo ng2-pro:directive --name [directive-name]
 Pipe                   yo ng2-pro:pipe --name [pipe-name]
 Service                yo ng2-pro:service --name [service-name]
 Interface              yo ng2-pro:interface --name [interface-name]
-
+```
 ## Getting To Know Yeoman
 
  * Yeoman has a heart of gold.
