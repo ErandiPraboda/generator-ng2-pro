@@ -22,13 +22,14 @@ steps
 * Navigate to http://localhost:8080/ The app will automatically reload if you change any of the source files 
 
 ## Features
-![img](generator-ng2-pro/assets/yarnicon.jpg)                 
-![img](generator-ng2-pro/assets/karma.png)
-![img](generator-ng2-pro/assets/sass.png)
-![img](generator-ng2-pro/assets/ts_lint.png)
-![img](generator-ng2-pro/assets/typedoc.png)
-![img](generator-ng2-pro/assets/typescript.png)
-![img](generator-ng2-pro/assets/yarnicon.jpg)
+                
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/karma.png)
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/istanbul.png)
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/sass.png)
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/sass_lint.png)
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/ts_lint.png)
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/typedoc.png)
+
 ## Scaffold Complete Directory Layout
 ```bash
 ├── /config/                   
