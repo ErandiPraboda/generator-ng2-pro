@@ -22,7 +22,7 @@ steps
 * Navigate to http://localhost:8080/ The app will automatically reload if you change any of the source files 
 
 ## Features
-![img](http://imgur.com/a/4J78V)                 
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/download.png)                 
                  
 ## Scaffold Complete Directory Layout
 ```bash
