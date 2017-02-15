@@ -22,6 +22,7 @@ steps
 * Navigate to http://localhost:8080/ The app will automatically reload if you change any of the source files 
 
 ## Scaffold Complete Directory Layout
+```bash
 ├── /config/                   
     └── /helpers.js
     └── /karma-test-shim.js
@@ -53,7 +54,7 @@ steps
 ├── tslint.json               
 └── typings.json                
 └── webpack.conf.js 
-
+```
 ## Usage
 
 That'll generate a project with all the common tools setup. This includes:
