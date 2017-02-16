@@ -29,6 +29,8 @@ steps
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/sass_lint.png)
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/ts_lint.png)
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/typedoc.png)
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/webpack.png)
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/yarn.jpg)
 
 ## Scaffold Complete Directory Layout
 ```bash
