@@ -13,7 +13,13 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "",
+    "webpack",
+    "yarn",
+    "karma",
+    "Jasmine",
+    "TSLint",
+    "SASS Lint",
+    "Istanbul",
     "yeoman-generator"
   ],
   "dependencies": {
