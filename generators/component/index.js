@@ -12,26 +12,38 @@ module.exports = Generator.extend({
     const lowerCase = string => string.charAt(0).toLowerCase() + string.slice(1);
     var path = process.cwd();
     
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('_component.html'),
-      this.destinationPath(`${path}/${name}/${name}.html`)
-      
+      this.destinationPath(`${path}/${name}/${name}.html`),
+      {
+         componentName : lowerCase(name),
+      }
      
      );
     this.fs.copyTpl(
       this.templatePath('_component.ts'),
       this.destinationPath(`${path}/${name}/${name}.ts`),
-      { componentName : lowerCase(name),
+      { 
+        componentName : lowerCase(name),
         className :titleCase(name),
         name: name }
     );
      
     
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('_component.spec.ts'),
-      this.destinationPath(`${path}/${name}/${name}.spec.ts`)
+      this.destinationPath(`${path}/${name}/${name}.spec.ts`),
+       {
+        
+        className :titleCase(name),
+        name: name 
+       }
      );
 
+    this.fs.copyTpl(
+      this.templatePath('_component.scss'),
+      this.destinationPath(`${path}/${name}/${name}.scss`)
+     );
     mkdirp.sync(`${path}/${name}/shared`);
  
      }

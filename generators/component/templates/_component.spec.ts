@@ -1,14 +1,14 @@
 /* beautify ignore:start */
 import {it, inject, beforeEachProviders} from '@angular/core/testing';
 import {TestComponentBuilder} from '@angular/compiler/testing';
-import {<%=className%>Component} from './index';
+import {<%= className %>} from './index';
 
 /* beautify ignore:end */
 
-describe('Component: <%=className%>Component', () => {
+describe('Component: <%= className %>', () => {
 
     let providers = [];      
-    let assert = new Assert<<%=className%>Component>(<%=className%>Component, providers);   
+    let assert = new Assert <<%= className %>>(<%= className %>, providers);   
   
     assert.it('should be defined', (component, element, fixture) => {
         fixture.detectChanges();

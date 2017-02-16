@@ -48,7 +48,7 @@ module.exports = Generator.extend({
         this.fs.copyTpl(
             this.templatePath('package.json'),
             this.destinationPath('package.json'), {
-                name: this.name,
+                appname: this.name,
                 
             }
         );
@@ -112,6 +112,10 @@ module.exports = Generator.extend({
         this.fs.copyTpl(
             this.templatePath('webpack.config.js'),
             this.destinationPath('webpack.config.js')
+        );
+        this.fs.copyTpl(
+            this.templatePath('webpack.config.prod.js'),
+            this.destinationPath('webpack.config.prod.js')
         );
         this.fs.copyTpl(
             this.templatePath('karma.conf.js'),

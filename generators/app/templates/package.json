@@ -1,5 +1,5 @@
 {
-  "name": "angular2-webpack",
+  "name": "<%=appname%>",
   "version": "1.0.0",
   "description": "A webpack starter for Angular",
   "scripts": {
@@ -7,8 +7,8 @@
     "test": "karma start",
     "tslint": "tslint -c tslint.json './src/**/*.ts'",
     "sass-lint":"sass-lint -c sass-lint.yml './src/**/*.scss' -v -q",
-    "build-docs": "rimraf docs && typedoc --options typedoc.json src/"
-
+    "build-docs": "rimraf docs && typedoc --options typedoc.json src/",
+    "deploy": "webpack --config webpack.config.prod.js --progress --colors"
     
      
   },
