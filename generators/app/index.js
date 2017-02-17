@@ -121,6 +121,14 @@ module.exports = Generator.extend({
             this.templatePath('karma.conf.js'),
             this.destinationPath('karma.conf.js')
         );
+        this.fs.copyTpl(
+            this.templatePath('app-routing.module.ts'),
+            this.destinationPath('app-routing.module.ts')
+        );
+        this.fs.copyTpl(
+            this.templatePath('bower.json'),
+            this.destinationPath('bower.json')
+        );
 },
  
 

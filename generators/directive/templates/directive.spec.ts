@@ -8,7 +8,7 @@ import {TestBed, async} from '@angular/core/testing';
 })
 class MockComponent {}
 
-describe('<%= directiveName %> directive', () => {
+describe('<%= directiveName %>', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({declarations: [MockComponent]});
     TestBed.compileComponents();

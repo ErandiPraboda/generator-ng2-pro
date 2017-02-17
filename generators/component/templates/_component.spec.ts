@@ -1,6 +1,6 @@
 
 import { TestBed } from '@angular/core/testing';
-import { <%= className %> } from './<%= className %>';
+import { <%= className %> } from './<%= name %>';
 describe('App', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({ declarations: [<%= className %>]});

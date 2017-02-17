@@ -7,7 +7,8 @@ module.exports = Generator.extend({
 
 
   writing: function () {
-    const name = this.options.name || 'myService';
+    const service = this.options.name || 'myService';
+    const name = service + '.service';
     const titleCase = string => string.charAt(0).toUpperCase() + string.slice(1);
     const lowerCase = string => string.charAt(0).toLowerCase() + string.slice(1);
     var path = process.cwd();
@@ -17,7 +18,7 @@ module.exports = Generator.extend({
       this.destinationPath(`${path}/${name}.ts`),
       { 
         
-        className :titleCase(name),
+        className :titleCase(service) + 'Service',
      
        }
     );
@@ -25,8 +26,8 @@ module.exports = Generator.extend({
       this.templatePath('_service.spec.ts'),
       this.destinationPath(`${path}/${name}.spec.ts`),
       { 
-        serviceName : lowerCase(name),
-        className :titleCase(name),
+        serviceName : lowerCase(service) + 'service',
+        className :titleCase(service) + 'Service',
         name: name
        }
     );

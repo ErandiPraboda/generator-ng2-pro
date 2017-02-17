@@ -2,16 +2,6 @@
   "name": "<%=appname%>",
   "version": "1.0.0",
   "description": "A webpack starter for Angular",
-  "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 8080",
-    "test": "karma start",
-    "tslint": "tslint -c tslint.json './src/**/*.ts'",
-    "sass-lint":"sass-lint -c sass-lint.yml './src/**/*.scss' -v -q",
-    "build-docs": "rimraf docs && typedoc --options typedoc.json src/",
-    "deploy": "webpack --config webpack.config.prod.js --progress --colors"
-    
-     
-  },
   "license": "MIT",
   "dependencies": {
     "@angular/common": "2.4.0",

@@ -8,7 +8,9 @@ module.exports = Generator.extend({
 
   writing: function () {
     
-    const name = this.options.name || 'myDirective';
+    const directive = this.options.name || 'myDirective';
+    const name = directive +'.directive';
+
     const titleCase = string => string.charAt(0).toUpperCase() + string.slice(1);
     const lowerCase = string => string.charAt(0).toLowerCase() + string.slice(1);
     var path = process.cwd();   
@@ -17,21 +19,21 @@ module.exports = Generator.extend({
       this.templatePath('directive.ts'),
       this.destinationPath(`${path}/${name}.ts`),
       { 
-        directiveName : lowerCase(name),
-        className :titleCase(name),
-        name: name
+        directiveName : lowerCase(directive),
+        className :titleCase(directive)+ 'Directive',
+    
        }
     );
      this.fs.copyTpl(
       this.templatePath('directive.spec.ts'),
       this.destinationPath(`${path}/${name}.spec.ts`),
       { 
-        directiveName : lowerCase(name),
-        className :titleCase(name),
-        name: name
+        directiveName : lowerCase(directive) ,
+        className :titleCase(directive)+ 'Directive',
+        name: directive,
        }
     );
-  },
+  }
 
   
 });
