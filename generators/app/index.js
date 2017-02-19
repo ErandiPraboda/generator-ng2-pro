@@ -127,7 +127,11 @@ module.exports = Generator.extend({
         );
         this.fs.copyTpl(
             this.templatePath('bower.json'),
-            this.destinationPath('bower.json')
+            this.destinationPath('bower.json'),
+            {
+               appname: this.name
+            }
+
         );
 },
  
