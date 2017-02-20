@@ -133,6 +133,10 @@ module.exports = Generator.extend({
             }
 
         );
+        this.fs.copyTpl(
+            this.templatePath('sass-lint.yml'),
+            this.destinationPath('sass-lint.yml')
+        );
 },
  
 
