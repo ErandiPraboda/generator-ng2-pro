@@ -47,7 +47,9 @@ module.exports = Generator.extend({
       this.templatePath('_component.scss'),
       this.destinationPath(`${path}/${component}/${name}.scss`)
      );
-    mkdirp.sync(`${path}/${name}/shared`);
+    mkdirp.sync(`${path}/${component}/shared`);
+   
+    
  
      }
 
