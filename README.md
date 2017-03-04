@@ -25,7 +25,7 @@ steps
 
 ## Features
 
-![alt tag](https://raw.githubusercontent.com/ErandiPaboda/generator-ng2-pro/master/assets/karma.png)
+![img](https://ibb.co/feCOka)
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/istanbul.png)
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/sass.png)
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/sass_lint.png)
