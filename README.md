@@ -24,8 +24,8 @@ steps
 
 ## Features
                 
-![img](https://github.com/Erandi1234/generator-ng2-pro/assets/karma.png)
-![img](https://github.com/Erandi1234/generator-ng2-pro/assets/istanbul.png)
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/karma.png)
+![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/istanbul.png)
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/sass.png)
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/sass_lint.png)
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/ts_lint.png)
