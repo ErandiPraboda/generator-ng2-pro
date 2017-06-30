@@ -1,0 +1,104 @@
+{
+  "LogicalDiskPercentFreeSpaceThresholdAlertEnabled": {
+    "tagID": 132,
+    "tagName": "LogicalDiskPercentFreeSpaceThresholdAlertEnabled",
+    "tagType": "Config",
+    "tagDataType": "bool",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Disk Free Space Threshold Alert Enabled",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": {
+      "text": "Disabled",
+      "value": "false"
+    },
+    "datetime": "4/19/2017 9:20:21 AM",
+    "categoryName": "LogicalDisk",
+    "isWritable": false,
+    "restrictSet": [
+      {
+        "text": "Enabled",
+        "value": "true"
+      },
+      {
+        "text": "Disabled",
+        "value": "false"
+      }
+    ]
+  },
+  "LogicalDiskPercentFreeSpaceThresholdAlertMessage": {
+    "tagID": 133,
+    "tagName": "LogicalDiskPercentFreeSpaceThresholdAlertMessage",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Disk Free Space Threshold Alert Message",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Available disk space (%) on drive $KEY$ is less than $THRESHOLD$%. Current value is $VALUE$%.s",
+    "datetime": "5/3/2017 10:04:20 AM",
+    "categoryName": "LogicalDisk",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "LogicalDiskPercentFreeSpaceThresholdAlertName": {
+    "tagID": 134,
+    "tagName": "LogicalDiskPercentFreeSpaceThresholdAlertName",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Disk Free Space Threshold Alert Name",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Disk Space Low",
+    "datetime": "3/1/2017 9:42:01 AM",
+    "categoryName": "LogicalDisk",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "LogicalDiskPercentFreeSpaceThresholdAlertType": {
+    "tagID": 135,
+    "tagName": "LogicalDiskPercentFreeSpaceThresholdAlertType",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Disk Free Space Threshold Alert Type",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Warning",
+    "datetime": "3/1/2017 9:42:01 AM",
+    "categoryName": "LogicalDisk",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "LogicalDiskPercentFreeSpaceThresholdKeyValue": {
+    "tagID": 136,
+    "tagName": "LogicalDiskPercentFreeSpaceThresholdKeyValue",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Disk Free Space Threshold Alert Drive Name",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "_Total",
+    "datetime": "3/1/2017 9:42:01 AM",
+    "categoryName": "LogicalDisk",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "LogicalDiskPercentFreeSpaceThresholdValue": {
+    "tagID": 137,
+    "tagName": "LogicalDiskPercentFreeSpaceThresholdValue",
+    "tagType": "Config",
+    "tagDataType": "int",
+    "tagUnit": "%",
+    "tagDisplayName": "Disk Free Space Threshold",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "10",
+    "datetime": "5/4/2017 4:43:24 AM",
+    "categoryName": "LogicalDisk",
+    "isWritable": false,
+    "restrictSet": " "
+  }
+}

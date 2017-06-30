@@ -102,12 +102,24 @@ module.exports = Generator.extend({
             this.destinationPath('config/')
         );
         this.fs.copyTpl(
-            this.templatePath('public/css/*'),
-            this.destinationPath('public/css')
+            this.templatePath('assets/fonts/flaticon/*'),
+            this.destinationPath('assets/fonts/flaticon')
         );
         this.fs.copyTpl(
-            this.templatePath('public/images/*'),
-            this.destinationPath('public/images')
+            this.templatePath('assets/fonts/opensans-bold/*'),
+            this.destinationPath('assets/fonts/opensans-bold')
+        );
+        this.fs.copyTpl(
+            this.templatePath('assets/fonts/opensans-bolditalic/*'),
+            this.destinationPath('assets/fonts/opensans-bolditalic')
+        );
+         this.fs.copyTpl(
+            this.templatePath('assets/images/*'),
+            this.destinationPath('assets/images')
+        );
+        this.fs.copyTpl(
+            this.templatePath('assets/styles/*'),
+            this.destinationPath('assets/styles')
         );
         this.fs.copyTpl(
             this.templatePath('webpack.config.js'),

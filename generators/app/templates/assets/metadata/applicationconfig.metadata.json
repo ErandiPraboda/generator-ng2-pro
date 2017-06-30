@@ -1,0 +1,305 @@
+{
+  "ApplicationAvailabilityAlertEnabled": {
+    "tagID": 115,
+    "tagName": "ApplicationAvailabilityAlertEnabled",
+    "tagType": "Config",
+    "tagDataType": "bool",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Availability Alert Enabled",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": {
+      "text": "Disabled",
+      "value": "false"
+    },
+    "datetime": "3/1/2017 9:42:05 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": [
+      {
+        "text": "Enabled",
+        "value": "true"
+      },
+      {
+        "text": "Disabled",
+        "value": "false"
+      }
+    ]
+  },
+  "ApplicationNameFilter": {
+    "tagID": 116,
+    "tagName": "ApplicationNameFilter",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Process Name Value",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "MATRIX24x7Agent.exe",
+    "datetime": "3/1/2017 9:42:05 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationProcessorTimePercentageThresholdAlertEnabled": {
+    "tagID": 117,
+    "tagName": "ApplicationProcessorTimePercentageThresholdAlertEnabled",
+    "tagType": "Config",
+    "tagDataType": "bool",
+    "tagUnit": "N/A",
+    "tagDisplayName": "CPU Percentage Threshold Alert Enabled",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": {
+      "text": "Disabled",
+      "value": "false"
+    },
+    "datetime": "5/3/2017 10:04:20 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": [
+      {
+        "text": "Enabled",
+        "value": "true"
+      },
+      {
+        "text": "Disabled",
+        "value": "false"
+      }
+    ]
+  },
+  "ApplicationProcessorTimePercentageThresholdAlertMessage": {
+    "tagID": 118,
+    "tagName": "ApplicationProcessorTimePercentageThresholdAlertMessage",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "CPU Percentage Threshold Alert Message",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Application CPU Percentage for $KEY$ is higher than $THRESHOLD$%. Current value is $VALUE$%.",
+    "datetime": "3/1/2017 9:42:05 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationProcessorTimePercentageThresholdAlertName": {
+    "tagID": 119,
+    "tagName": "ApplicationProcessorTimePercentageThresholdAlertName",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "CPU Percentage Threshold Alert Name",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Application CPU Percentage High",
+    "datetime": "3/1/2017 9:42:05 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationProcessorTimePercentageThresholdAlertType": {
+    "tagID": 120,
+    "tagName": "ApplicationProcessorTimePercentageThresholdAlertType",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "CPU Percentage Threshold Alert Type",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Warning",
+    "datetime": "3/1/2017 9:42:05 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationProcessorTimePercentageThresholdValue": {
+    "tagID": 121,
+    "tagName": "ApplicationProcessorTimePercentageThresholdValue",
+    "tagType": "Config",
+    "tagDataType": "int",
+    "tagUnit": "N/A",
+    "tagDisplayName": "CPU Percentage Threshold",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "81",
+    "datetime": "5/3/2017 10:04:20 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationThreadCountThresholdAlertEnabled": {
+    "tagID": 122,
+    "tagName": "ApplicationThreadCountThresholdAlertEnabled",
+    "tagType": "Config",
+    "tagDataType": "bool",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Thread  Count Threshold Alert Enabled",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": {
+      "text": "Disabled",
+      "value": "false"
+    },
+    "datetime": "5/3/2017 10:04:20 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": [
+      {
+        "text": "Enabled",
+        "value": "true"
+      },
+      {
+        "text": "Disabled",
+        "value": "false"
+      }
+    ]
+  },
+  "ApplicationThreadCountThresholdAlertMessage": {
+    "tagID": 123,
+    "tagName": "ApplicationThreadCountThresholdAlertMessage",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Thread Count Threshold Alert Message",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Application thread count for $KEY$ is higher than $THRESHOLD$. Current value is $VALUE$.s",
+    "datetime": "5/3/2017 10:04:20 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationThreadCountThresholdAlertName": {
+    "tagID": 124,
+    "tagName": "ApplicationThreadCountThresholdAlertName",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Thread Count Threshold Alert Name",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Application Thread Count High",
+    "datetime": "3/1/2017 9:42:05 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationThreadCountThresholdAlertType": {
+    "tagID": 125,
+    "tagName": "ApplicationThreadCountThresholdAlertType",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Thread Count Threshold Alert Type",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Warning",
+    "datetime": "3/1/2017 9:42:05 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationThreadCountThresholdValue": {
+    "tagID": 126,
+    "tagName": "ApplicationThreadCountThresholdValue",
+    "tagType": "Config",
+    "tagDataType": "int",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Thread Count Threshold",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "98",
+    "datetime": "5/3/2017 2:58:38 PM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationWorkingSetSizeThresholdAlertEnabled": {
+    "tagID": 127,
+    "tagName": "ApplicationWorkingSetSizeThresholdAlertEnabled",
+    "tagType": "Config",
+    "tagDataType": "bool",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Working Set(Memory) Threshold Alert Enabled",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": {
+      "text": "Disabled",
+      "value": "false"
+    },
+    "datetime": "5/3/2017 10:04:20 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": [
+      {
+        "text": "Enabled",
+        "value": "true"
+      },
+      {
+        "text": "Disabled",
+        "value": "false"
+      }
+    ]
+  },
+  "ApplicationWorkingSetSizeThresholdAlertMessage": {
+    "tagID": 128,
+    "tagName": "ApplicationWorkingSetSizeThresholdAlertMessage",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Working Set (Memory) Threshold Alert Message",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Application memory usage for $KEY$ is higher than $THRESHOLD$ KB. Current value is $VALUE$ KB.s",
+    "datetime": "5/3/2017 10:04:20 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationWorkingSetSizeThresholdAlertName": {
+    "tagID": 129,
+    "tagName": "ApplicationWorkingSetSizeThresholdAlertName",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Working Set (Memory) Threshold Alert Name",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Application Memory Usage High",
+    "datetime": "3/1/2017 9:42:05 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationWorkingSetSizeThresholdAlertType": {
+    "tagID": 130,
+    "tagName": "ApplicationWorkingSetSizeThresholdAlertType",
+    "tagType": "Config",
+    "tagDataType": "string",
+    "tagUnit": "N/A",
+    "tagDisplayName": "Working Set (Memory) Threshold Alert Type",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "Warning",
+    "datetime": "3/1/2017 9:42:05 AM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  },
+  "ApplicationWorkingSetSizeThresholdValue": {
+    "tagID": 131,
+    "tagName": "ApplicationWorkingSetSizeThresholdValue",
+    "tagType": "Config",
+    "tagDataType": "int",
+    "tagUnit": "KB",
+    "tagDisplayName": "Working Set (Memory) Threshold",
+    "tagIndex": 0,
+    "valueIndex": 0,
+    "tagValue": "50003",
+    "datetime": "5/3/2017 2:58:38 PM",
+    "categoryName": "Application",
+    "isWritable": false,
+    "restrictSet": " "
+  }
+}
