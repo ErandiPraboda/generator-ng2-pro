@@ -1,6 +1,7 @@
 # generator-ng2-pro 
 [![Build Status](https://travis-ci.org/Erandi1234/generator-ng2-pro.svg?branch=master)](https://travis-ci.org/Erandi1234/generator-ng2-pro)
-[![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT) [![Code Climate](https://codeclimate.com/github/Erandi1234/generator-ng2-pro/badges/gpa.svg)](https://codeclimate.com/github/Erandi1234/generator-ng2-pro) [![npm](https://img.shields.io/npm/dm/localeval.svg)]() [![npm](https://img.shields.io/npm/v/npm.svg)]()
+[![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT)  [![npm](https://img.shields.io/npm/dm/localeval.svg)]() [![npm](https://img.shields.io/npm/v/npm.svg)]()
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-ng2-pro using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/) ).
@@ -23,7 +24,7 @@ steps
 * Navigate to http://localhost:8080/ The app will automatically reload if you change any of the source files 
 
 ## Features
-                
+
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/karma.png)
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/istanbul.png)
 ![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/sass.png)
