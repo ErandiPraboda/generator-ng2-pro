@@ -1,4 +1,5 @@
-# generator-ng2-pro 
+﻿A yeoman generator to scaffold an Angular2 application
+
 [![Build Status](https://travis-ci.org/Erandi1234/generator-ng2-pro.svg?branch=master)](https://travis-ci.org/Erandi1234/generator-ng2-pro)
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT)  [![npm](https://img.shields.io/npm/dm/localeval.svg)]() [![npm](https://img.shields.io/npm/v/npm.svg)]()
 
@@ -25,14 +26,13 @@ steps
 
 ## Features
 
-![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/karma.png)
-![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/istanbul.png)
-![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/sass.png)
-![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/sass_lint.png)
-![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/ts_lint.png)
-![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/typedoc.png)
-![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/webpack.png)
-![img](https://github.com/Erandi1234/generator-ng2-pro/blob/master/assets/yarn.jpg)
+![img](https://raw.githubusercontent.com/ErandiPraboda/generator-ng2-pro/master/assets/karma.png)
+![img](https://raw.githubusercontent.com/ErandiPraboda/generator-ng2-pro/master/assets/istanbul.png)
+![img](https://raw.githubusercontent.com/ErandiPraboda/generator-ng2-pro/master/assets/sass.png)
+![img](https://raw.githubusercontent.com/ErandiPraboda/generator-ng2-pro/master/assets/ts_lint.png)
+![img](https://raw.githubusercontent.com/ErandiPraboda/generator-ng2-pro/master/assets/typedoc.png)
+![img](https://raw.githubusercontent.com/ErandiPraboda/generator-ng2-pro/master/assets/webpack.png)
+![img](https://raw.githubusercontent.com/ErandiPraboda/generator-ng2-pro/master/assets/yarn.jpg)
 
 ## Scaffold Complete Directory Layout
 ```bash
